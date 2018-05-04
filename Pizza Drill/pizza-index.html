@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Krusty Krab Pizza</title>
+	<link rel="stylesheet" type="text/css" href="./css/pizza_css.css">
+</head>
+<body>
+
+	<h1>Krusty Krab Pizza</h1>
+	
+	<div id="main-container">
+		
+		<div id="total">
+			<h3>Your Order</h3>
+			<div id="show-text"></div>
+			<div id="total-price"></div>
+		</div>
+
+		<form id="menu">
+			<div class="container">
+				<div class="box">
+					<h3>Pizza Size</h3>
+					<div class="input-font">
+						<input class="size" type="radio" name="size" value="Personal Size" checked>Personal<br>
+						<input class="size" type="radio" name="size" value="Medium Size">Medium<br>
+						<input class="size" type="radio" name="size" value="Large Size">Large<br>
+						<input class="size" type="radio" name="size" value="Extra Large Size">Extra Large
+					</div>
+				</div>
+			
+				<div class="box">
+					<h3>Crust</h3>
+					<div class="input-font">	
+						<input class="crust" type="radio" name="crust" value="Plain Crust" checked>Plain Crust<br>
+						<input class="crust" type="radio" name="crust" value="Garlic Butter Crust">Garlic Butter Crust<br>
+						<input class="crust" type="radio" name="crust" value="Cheese Stuffed Crust">Cheese Stuffed Crust<br>
+						<input class="crust" type="radio" name="crust" value="Spicy Crust">Spicy Crust<br>
+						<input class="crust" type="radio" name="crust" value="House Special Crust">House Special Crust
+					</div>
+				</div>
+			
+				<div class="box">
+					<h3>Sauce</h3>
+					<div class="input-font">
+						<input class="sauce" type="radio" name="sauce" value="Marinara Sauce" checked>Marinara Sauce<br>
+						<input class="sauce" type="radio" name="sauce" value="White Sauce">White Sauce<br>
+						<input class="sauce" type="radio" name="sauce" value="Barbeque Sauce">Barbeque Sauce<br>
+						<input class="sauce" type="radio" name="sauce" value="No Sauce">No Sauce
+					</div>
+				</div>
+			
+				<div class="box">
+					<h3>Cheese</h3>
+					<div class="input-font">	
+						<input class="cheese" type="radio" name="cheese" value="Regular Cheese" checked>Regular<br>
+						<input class="cheese" type="radio" name="cheese" value="No Cheese">No Cheese<br>
+						<input class="cheese" type="radio" name="cheese" value="Extra Cheese">Extra Cheese
+					</div>	
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="box box1">
+					<h3>Meats</h3>
+					<div class="input-font">
+						<input class="meats" type="checkbox" name="meats" value="Pepperoni">Pepperoni<br>
+						<input class="meats" type="checkbox" name="meats" value="Sausage">Sausage<br>
+						<input class="meats" type="checkbox" name="meats" value="Canadian Bacon">Canadian Bacon<br>
+						<input class="meats" type="checkbox" name="meats" value="Ground Beef">Ground Beef<br>
+						<input class="meats" type="checkbox" name="meats" value="Anchovy">Anchovy<br>
+						<input class="meats" type="checkbox" name="meats" value="Chicken">Chicken
+					</div>
+				</div>
+			
+				<div class="box">
+					<h3>Veggies</h3>
+					<div class="input-font">
+						<input class="veggies" type="checkbox" name="veggies" value="Tomatoes">Tomatoes<br>
+						<input class="veggies" type="checkbox" name="veggies" value="Onions">Onions<br>
+						<input class="veggies" type="checkbox" name="veggies" value="Olives">Olives<br>
+						<input class="veggies" type="checkbox" name="veggies" value="Green Peppers">Green Peppers<br>
+						<input class="veggies" type="checkbox" name="veggies" value="Mushrooms">Mushrooms<br>
+						<input class="veggies" type="checkbox" name="veggies" value="Pineapple">Pineapple<br>
+						<input class="veggies" type="checkbox" name="veggies" value="Spinach">Spinach<br>
+						<input class="veggies" type="checkbox" name="veggies" value="Jalapeno">Jalapeno
+					</div>
+				</div>
+			</div>
+		</form>
+
+	</div>	
+
+	<div class="button-container">
+		<div>
+			<button type="button" class="button" onclick="getReceipt()">Order</button>
+			<button type="button" class="button" onclick="getClear()">Cancel</button>
+		</div>
+	</div>
+
+	
+<script type="text/javascript" src="./js/pizza_js.js"></script>
+
+</body>
+</html>
