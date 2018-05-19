@@ -1,0 +1,7 @@
+D:\The Tech Academy\C#\MethodsExercise7\MethodsExercise7\bin\Debug\MethodsExercise7.exe.config
+D:\The Tech Academy\C#\MethodsExercise7\MethodsExercise7\bin\Debug\MethodsExercise7.exe
+D:\The Tech Academy\C#\MethodsExercise7\MethodsExercise7\bin\Debug\MethodsExercise7.pdb
+D:\The Tech Academy\C#\MethodsExercise7\MethodsExercise7\obj\Debug\MethodsExercise7.csprojAssemblyReference.cache
+D:\The Tech Academy\C#\MethodsExercise7\MethodsExercise7\obj\Debug\MethodsExercise7.csproj.CoreCompileInputs.cache
+D:\The Tech Academy\C#\MethodsExercise7\MethodsExercise7\obj\Debug\MethodsExercise7.exe
+D:\The Tech Academy\C#\MethodsExercise7\MethodsExercise7\obj\Debug\MethodsExercise7.pdb
