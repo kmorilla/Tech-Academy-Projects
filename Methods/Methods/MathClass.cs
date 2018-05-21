@@ -8,15 +8,20 @@ namespace Methods
 {
     class MathClass
     {
-        public MathClass()
+        public static int Add(int number)
         {
-            num1 = 0;
-            num2 = 0;
-            result = 0;
+            int addNumber = number + 2;
+            return addNumber;
         }
-        public int num1 { get; set; }
-        public int num2 { get; set; }
-        public int result { get; set; }
-
+        public static int Subtract(int number)
+        {
+            int subNumber = number - 2;
+            return subNumber;
+        }
+        public static int Multiply(int number)
+        {
+            int mulNumber = number * 2;
+            return mulNumber;
+        }
     }
 }

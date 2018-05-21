@@ -10,51 +10,17 @@ namespace Methods
     {
         static void Main(string[] args)
         {
-            MathClass math = new MathClass();
-            Console.WriteLine("Please enter first number: ");
-            math.num1 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Please enter second number: ");
-            math.num2 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Please enter \"Add,\" \"Subtract,\" or \"Multiply\": ");
-            string addSubMul = Console.ReadLine();
-            
+            Console.Write("Please enter number to do math operations on: ");
+            int number = Convert.ToInt32(Console.ReadLine());
 
-            if (addSubMul == "Add")
-            {
-                math = Add(math);
-                Console.WriteLine(math.num1 + " plus " + math.num2 + " equals " + math.result);
-            }
-            else if (addSubMul == "Subtract")
-            {
-                math = Subtract(math);
-                Console.WriteLine(math.num1 + " minus " + math.num2 + " equals " + math.result);
+            int addEqual = MathClass.Add(number);
+            int subEqual = MathClass.Subtract(number);
+            int mulEqual = MathClass.Multiply(number);
 
-            }
-            else if (addSubMul == "Multiply")
-            {
-                math = Multiply(math);
-                Console.WriteLine(math.num1 + " times " + math.num2 + " equals " + math.result);
-            }
-
+            Console.WriteLine("Addition: " + addEqual);
+            Console.WriteLine("Subtracion: " + subEqual);
+            Console.WriteLine("Multiply: " + mulEqual);
             Console.ReadLine();            
-        }
-
-        public static MathClass Add(MathClass math)
-        {
-            math.result = math.num1 + math.num2;
-            return math;
-        }
-
-        public static MathClass Subtract(MathClass math)
-        {
-            math.result = math.num1 - math.num2;
-            return math;
-        }
-
-        public static MathClass Multiply(MathClass math)
-        {
-            math.result = math.num1 * math.num2;
-            return math;
-        }
+        }        
     }
 }
