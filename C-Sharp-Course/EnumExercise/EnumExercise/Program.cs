@@ -10,29 +10,35 @@ namespace EnumExercise
     {
         static void Main(string[] args)
         {
-            Console.Write("Please enter the current day of the week: ");
-            string userDay = Console.ReadLine();
-            bool falseDay = false;
-            
-                while (falseDay == false)
+            try
+            {
+                Console.Write("Please enter a value within the DaysOfWeek enumeration: ");
+                DaysOfWeek day = (DaysOfWeek)Enum.Parse(typeof(DaysOfWeek), Console.ReadLine());
+                if (Enum.IsDefined(typeof(DaysOfWeek),day))
                 {
-                    foreach (DaysOfTheWeek day in Enum.GetValues(typeof(DaysOfTheWeek)))
-                    {
-                        string stringDay = Convert.ToString(day);
-                        if (userDay == stringDay)
-                        {
-                            Console.WriteLine("Correct! It is {0}.", day);
-                            falseDay = true;
-                        }
-                    }
-                    if (falseDay == false)
-                    {
-                        Console.Write("Please enter valid day: ");
-                        userDay = Console.ReadLine();
-                    }
+                    Console.WriteLine("The day you picked was {0}.", day);
+                }
+                else
+                {
+                    Console.WriteLine("{0} is not a valid value within the DaysOfWeek enumeration.", day);
                 }
                 Console.ReadLine();
-            
+            }
+            catch (ArgumentException)
+            {
+                Console.WriteLine("That value is not within the DaysOfWeek enumeration.");
+                Console.ReadLine();
+            }                       
+        }
+        public enum DaysOfWeek
+        {
+            Monday,
+            Tuesday,
+            Wednesday,
+            Thursday,
+            Friday,
+            Saturday,
+            Sunday
         }
     }
 }
