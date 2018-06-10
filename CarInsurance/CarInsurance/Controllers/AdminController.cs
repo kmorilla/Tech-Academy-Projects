@@ -15,7 +15,7 @@ namespace CarInsurance.Controllers
         {
             using (CarInsuranceQuotesEntities db = new CarInsuranceQuotesEntities())
             {
-                var quotes = new List<CarInsuraceQuote>();
+                var quotes = (from c in db.CarInsuraceQuotes select c).ToList();
                 var quoteVms = new List<AdminVm>();
                 foreach (var quote in quotes)
                 {

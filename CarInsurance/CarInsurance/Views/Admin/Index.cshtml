@@ -7,19 +7,33 @@
             <h5 class="m-0">Quotes</h5>
         </div>
         <div class="card-body">
+            <div class="row">
+                <div class="col-3">
+                    <h6>First Name</h6>
+                </div>
+                <div class="col-3">
+                    <h6>Last Name</h6>
+                </div>
+                <div class="col-3">
+                    <h6>Email Address</h6>
+                </div>
+                <div class="col-3">
+                    <h6>Quote</h6>
+                </div>
+            </div>
             @foreach (var admin in Model)
             {
                 <div class="row">
-                    <div class="col">
+                    <div class="col-3">
                         @admin.FirstName
                     </div>
-                    <div class="col">
+                    <div class="col-3">
                         @admin.LastName
                     </div>
-                    <div class="col">
+                    <div class="col-3">
                         @admin.EmailAddress
                     </div>
-                    <div class="col">
+                    <div class="col-3">
                         @admin.VehicleQuote
                     </div>
                 </div>
