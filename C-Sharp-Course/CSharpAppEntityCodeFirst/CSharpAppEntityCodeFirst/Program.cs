@@ -15,7 +15,7 @@ namespace CSharpAppEntityCodeFirst
                 Console.Write("Enter item purchased: ");
                 string itemPurchased = Console.ReadLine();
                 Console.Write("Enter item amount: ");
-                decimal itemAmount = Convert.ToDecimal(Console.ReadLine());
+                double itemAmount = Convert.ToDouble(Console.ReadLine());
                 Console.Write("Enter date when item was purchased: ");
                 string datePurchased = Console.ReadLine();
 
